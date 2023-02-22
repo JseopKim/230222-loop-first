@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    let pokemon = ["피카츄", "라이츄", "파이리", "꼬북이", "버터플", "야도란", "피존투", "또가스"];
+    // console.log(pokemon[4]); //literal
+    // console.log(pokemon.length);
+    // console.log(pokemon[pokemon.length-1]);
+
+    // let root = window["document"].getElementById["root"];
+    // let a = window;
+    // console.dir(a);
+
+    let root = document.getElementById("root");
+
+    // for(
+    // let index = 0; //index를 선언과 동시에 0으로 할당
+    // index < pokemon.length; //(비교연산) pokemon.length보다 작으면 실행해
+    // index = index + 1 // index에 1을 더해서 index에 담는다.
+    // ) {
+    //   console.log(pokemon[index]);
+    // }
+
+    for(i=0;i<pokemon.length;i++) {
+      let li = document.createElement("li");
+      li.textContent = pokemon[i];
+      root.appendChild(li);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    let root = document.getElementById("root");
+
+    for (let i = 1; i <= 9; i++) {
+      let br = document.createElement("br")
+      root.appendChild(br);
+      for (let j = 1; j <= 9; j++) {
+        let num = document.createElement("div");
+        num.textContent = i + " x " + j + "=" + i * j + " ";
+        root.appendChild(num);
+      }
+    }
+  </script>
+</body>
+
+</html>
